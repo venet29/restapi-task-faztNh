@@ -1,0 +1,6 @@
+#variables de entormo
+.env
+
+#node
+node_modules
+dist

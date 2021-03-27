@@ -1,0 +1,42 @@
+GET http://localhost:3000/api/tasks
+
+
+### // pagine seria cantidad objetos size pagina revisar
+GET http://localhost:3000/api/tasks?page=0&size=4
+
+
+### 
+GET http://localhost:3000/api/tasks?page=0&size=4&title=5titulo  
+
+
+
+###
+GET http://localhost:3000/api/tasks/done
+
+
+###
+GET http://localhost:3000/api/tasks/60564d119890d227b88857a5
+
+
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title" : "1titulo prueba",
+    "description": "1descripcion prueba",
+    "done": true
+}
+
+###
+DELETE http://localhost:3000/api/tasks/60564bc6b277b148640b8612
+
+###
+PUT http://localhost:3000/api/tasks/605676016f6519566c61a632
+Content-Type: application/json
+
+{
+    "title" : "6 titutlo modifique"
+}
